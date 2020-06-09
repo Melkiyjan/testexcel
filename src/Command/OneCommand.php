@@ -41,11 +41,11 @@ class OneCommand extends Command
         $this->swiftmailerService = $swiftmailerService;
     }
 
-    protected static $defaultName = 'exseltoemail';
+    protected static $defaultName = 'exceltoemail';
 
     protected function configure()
     {
-        $this->setName('exseltoemail');
+        $this->setName('exceltoemail');
         $this->setDescription('send excel to email');
         $this->setHelp('This command will send');
         $this->addArgument('email', InputArgument::REQUIRED, 'email for sending');
